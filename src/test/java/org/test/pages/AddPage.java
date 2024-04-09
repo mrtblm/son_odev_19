@@ -27,7 +27,7 @@ public class AddPage {
         Selenide.open("https://demoqa.com/webtables");
         return this;
     }
-    public SelenideElement addBtn() {
+        public SelenideElement addBtn() {
         return  $(By.id("addNewRecordButton"));
     }
         public SelenideElement firstNameTxt() { return  $("#firstName").setValue(firstname); }

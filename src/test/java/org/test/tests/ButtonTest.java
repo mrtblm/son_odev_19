@@ -16,6 +16,10 @@ import org.test.pages.ButtonPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import io.qameta.allure.*;
+
+@Epic("Login Tests Epic")
+@Feature("Login Features")
 
 public class ButtonTest extends BaseTest {
     ButtonPage button=new ButtonPage();
@@ -24,6 +28,9 @@ public class ButtonTest extends BaseTest {
 
 
     @Test(priority = 1)
+    @Description("Geçerli butona tıklayınız")
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("İlgili butona tıklama işlemini yapar")
     public void buttonsTest() {
 
         //1.Adım
@@ -39,6 +46,9 @@ public class ButtonTest extends BaseTest {
     }
 
     @Test (priority = 2)
+    @Description("Yeni bir kullanıcı ekleyiniz")
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("Yeni bir kullanıcı ekleme işlemi yapar ve günceller")
     public void addTest() {
 
         //2.Adım
